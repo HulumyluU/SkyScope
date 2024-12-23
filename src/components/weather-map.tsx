@@ -43,7 +43,7 @@ const WeatherMap = ({ data, locationName }: WeatherMapProps) => {
         <div className="space-y-2">
           <div className="flex items-center gap-2 mb-4">
             <MapPin className="h-4 w-4" />
-            <h3 className="font-medium">Location Map</h3>
+            <h3 className="font-medium">Your Location</h3>
           </div>
           
           <div className="relative h-[400px] w-full rounded-lg overflow-hidden border bg-background">
@@ -62,7 +62,7 @@ const WeatherMap = ({ data, locationName }: WeatherMapProps) => {
                 {description} • {temp}°C
               </p>
               <p className="text-xs text-muted-foreground">
-                Lat: {lat.toFixed(3)}° • Lon: {lon.toFixed(3)}°
+                Lat: {lat.toFixed(2)}° • Lon: {lon.toFixed(2)}°
               </p>
             </div>
           </div>

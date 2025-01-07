@@ -6,7 +6,7 @@ import type { ForecastData } from "@/api/types";
 interface WeatherForecastProps {
   data: ForecastData;
 }
-
+ 
 interface DailyForecast {
   date: number;
   temp_min: number;
@@ -97,10 +97,8 @@ export function WeatherForecast({ data }: WeatherForecastProps) {
     </div>
   ))}
 </div>
-
-
-      </CardContent>
-    </Card>
+</CardContent>
+</Card>
   );
 }
 
